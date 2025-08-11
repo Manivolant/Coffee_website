@@ -7,27 +7,11 @@
         *{
             transition: all ease 0.3s;
         }
-        @keyframes an
-        {
-            0%{
-                transform: rotate(0deg);
-            }
-            100%{
-                transform: rotate(360deg);
-            }
-        }
-        #circle{
-            animation: an infinite linear 2s;
-        }
     </style>
     <link rel="stylesheet" href="./src/output.css">
     <title>Coffee | Home</title>
 </head>
 <body class="overflow-x-hidden bg-[#252324] pb-20">
-    <!--loading-->
-    <div id="loading" class="w-lvw h-lvh bg-[#eed5b9] fixed left-0 top-0 z-200 justify-center items-center flex opacity-100">
-        <div id="circle" class="w-[10vw] h-[10vw] rounded-full border-[2vw] border-transparent border-b-[#c0ac96] border-l-[#c0ac96]"></div>
-    </div>
     <!--left side panel-->
     <div id="panel" class="w-[50vw] h-lvh bg-black/25 backdrop-blur-md flex justify-center items-start flex-col p-10 fixed left-0 gap-5 -translate-x-full z-100">
         <a class="text-[#4e3e37] cursor-pointer hover:opacity-75 hover:pl-5 text-2xl">Shop</a>

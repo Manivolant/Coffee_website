@@ -7,11 +7,16 @@
         *{
             transition: all ease 0.3s;
         }
+        html{
+            scroll-behavior: smooth;
+        }
     </style>
     <link rel="stylesheet" href="./src/output.css">
     <title>Coffee | Home</title>
 </head>
 <body class="overflow-x-hidden bg-[#252324] pb-20">
+    <!--top button-->
+    <button id="upbutton" class="fixed right-0 bottom-0 w-15 h-15 border-3 border-[#b99f93] rounded-full text-lg text-[#b99f93] bg-transparent cursor-pointer hover:opacity-70 font-bold hover:bg-[#eed5b9] animate-pulse translate-x-full translate-y-full hover:animate-none">up</button>
     <!--left side panel-->
     <div id="panel" class="w-[50vw] h-lvh bg-black/25 backdrop-blur-md flex justify-center items-start flex-col p-10 fixed left-0 gap-5 -translate-x-full z-100">
         <a class="text-[#4e3e37] cursor-pointer hover:opacity-75 hover:pl-5 text-2xl">Shop</a>

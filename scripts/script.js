@@ -26,4 +26,22 @@ window.addEventListener("scroll",()=>{
 			document.getElementById("header").classList.remove(add_class_remove[i]);
 		}
 	}
+	if (scroll_y >= 640)
+	{
+		document.getElementById("upbutton").classList.add("block");
+		document.getElementById("upbutton").classList.add("m-5");
+		document.getElementById("upbutton").classList.remove("translate-y-full");
+		document.getElementById("upbutton").classList.remove("translate-x-full");
+	}else{
+		document.getElementById("upbutton").classList.remove("block");
+		document.getElementById("upbutton").classList.remove("m-5");
+		document.getElementById("upbutton").classList.add("translate-y-full");
+		document.getElementById("upbutton").classList.add("translate-x-full");
+	}
+});
+document.getElementById("upbutton").addEventListener("click",()=>{
+	window.scrollTo({
+		top:0,
+		behavior:"smooth"
+	});
 });

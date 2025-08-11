@@ -642,6 +642,9 @@
   .bg-\[url\(https\:\/\/raw\.githubusercontent\.com\/manivolant\/coffe_website\/main\/images\/1000056894\.jpg\)\] {
     background-image: url(https://raw.githubusercontent.com/manivolant/coffe_website/main/images/1000056894.jpg);
   }
+  .bg-\[url\(https\:\/\/raw\.githubusercontent\.com\/manivolant\/coffee_website\/main\/images\/1000056894\.jpg\)\] {
+    background-image: url(https://raw.githubusercontent.com/manivolant/coffee_website/main/images/1000056894.jpg);
+  }
   .bg-cover {
     background-size: cover;
   }

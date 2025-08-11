@@ -220,8 +220,35 @@
   .left-1\/2 {
     left: calc(1/2 * 100%);
   }
+  .-z-10 {
+    z-index: calc(10 * -1);
+  }
+  .-z-20 {
+    z-index: calc(20 * -1);
+  }
+  .-z-\[1\] {
+    z-index: calc(1 * -1);
+  }
+  .-z-\[49\] {
+    z-index: calc(49 * -1);
+  }
+  .-z-\[100\] {
+    z-index: calc(100 * -1);
+  }
+  .-z-\[200\] {
+    z-index: calc(200 * -1);
+  }
+  .-z-\[500\] {
+    z-index: calc(500 * -1);
+  }
+  .-z-\[1000\] {
+    z-index: calc(1000 * -1);
+  }
   .z-10 {
     z-index: 10;
+  }
+  .z-49 {
+    z-index: 49;
   }
   .z-50 {
     z-index: 50;
@@ -231,6 +258,9 @@
   }
   .z-200 {
     z-index: 200;
+  }
+  .z-\[-100\] {
+    z-index: -100;
   }
   .my-10 {
     margin-block: calc(var(--spacing) * 10);
@@ -339,6 +369,9 @@
   }
   .w-\[50vw\] {
     width: 50vw;
+  }
+  .w-auto {
+    width: auto;
   }
   .w-full {
     width: 100%;
@@ -606,6 +639,9 @@
   .bg-\[url\(\/images\/1000056894\.jpg\)\] {
     background-image: url(/images/1000056894.jpg);
   }
+  .bg-\[url\(https\:\/\/raw\.githubusercontent\.com\/manivolant\/coffe_website\/main\/images\/1000056894\.jpg\)\] {
+    background-image: url(https://raw.githubusercontent.com/manivolant/coffe_website/main/images/1000056894.jpg);
+  }
   .bg-cover {
     background-size: cover;
   }
@@ -614,6 +650,9 @@
   }
   .bg-no-repeat {
     background-repeat: no-repeat;
+  }
+  .object-cover {
+    object-fit: cover;
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
@@ -741,6 +780,13 @@
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, visibility, content-visibility, overlay, pointer-events;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-none {
+    transition-property: none;
+  }
+  .duration-0 {
+    --tw-duration: 0ms;
+    transition-duration: 0ms;
   }
   .outline-none {
     --tw-outline-style: none;
@@ -1018,6 +1064,10 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-scale-x {
   syntax: "*";
   inherits: false;
@@ -1056,6 +1106,7 @@
       --tw-backdrop-opacity: initial;
       --tw-backdrop-saturate: initial;
       --tw-backdrop-sepia: initial;
+      --tw-duration: initial;
       --tw-scale-x: 1;
       --tw-scale-y: 1;
       --tw-scale-z: 1;

@@ -32,4 +32,6 @@ window.addEventListener("load",()=>{
 	document.getElementById("loading").classList.add("hidden");
 	document.getElementById("loading").classList.add("opacity-0");
 	document.getElementById("loading").classList.remove("opacity-100");
+	document.getElementById("loading").classList.remove("flex");
+	document.getElementById("loading").remove();
 });
